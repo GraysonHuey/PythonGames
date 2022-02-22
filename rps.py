@@ -1,10 +1,12 @@
 import random
 
+#Let Player Pick Their Move
 user_action = input("Enter a choice (rock, paper, scissors): ")
 possible_actions = ["rock", "paper", "scissors"]
 computer_action = random.choice(possible_actions)
 print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
 
+# Results
 if user_action == computer_action:
     print(f"Both players selected {user_action}. It's a tie!")
 elif user_action == "rock":
@@ -23,6 +25,7 @@ elif user_action == "scissors":
     else:
         print("Rock smashes scissors! You lose.")
 
+# Ask Player If They Want To Play Again
 play_again = input("Play again? (y/n): ")
 if play_again == "y":
     loop
