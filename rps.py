@@ -58,6 +58,7 @@ while True:
     repeat = input("That is not a valid choice. Please try again: ").lower()
   
   if repeat == 'n':
+    print("Thanks for playing! I hope you had fun!")
     break
 
   print("\n----------------------------\n")

@@ -59,15 +59,18 @@ def play_round(num: int) -> bool:
             print("Please only enter a number.")
 
 
-def reset() -> [bool]:
+def reset() -> bool:
     """Checks if the player wants to quit, and if they don't, checks if they want to change the rules"""
     while True:  # Checks if the user wants to quit the game
         close = input("Would you like to exit the game? (Y/N): ").lower()
         if (close == "y") or (close == "n"):
             if close == "y":
+                print("-------------------------------------------------------------")
                 quit()
             else:
+                print("-------------------------------------------------------------")
                 break
+                
         print("Please only enter Y or N.")
     while True:  # Checks if the user wants the rules to be changed
         rule_change = input("Would you like to change the rules? (Y/N): ").lower()
